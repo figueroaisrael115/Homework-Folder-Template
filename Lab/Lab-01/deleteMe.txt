@@ -1,2 +1,6 @@
-Hello World!
+#include <iostream> // Required for std::cout
 
+int main() {
+    // Prints the words hello world 
+    std::cout << "Hello, World!" << std::endl;
+    return 0; // Ends Program
