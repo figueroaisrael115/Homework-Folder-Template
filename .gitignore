@@ -41,7 +41,7 @@
 *.app
 
 # Folders
-.vscode/
+!.vscode/
 temp/
 build/
 bin/
