@@ -1,3 +1,4 @@
+#define _USE_MATH_DEFINES
 #include <iostream>
 #include <iomanip>
 #include <cmath>
@@ -49,5 +50,7 @@ int main()
         break;
     }
     }
+    std::cout << "YIPPEE! You have successfully calculated the area of your shape!" << std::endl;
+
     return 0;
 }
