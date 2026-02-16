@@ -1,4 +1,4 @@
-#include "mapstuff.hpp'
+#include "../include/mapstuff.hpp"
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
@@ -8,8 +8,8 @@ double mapHalfHeight;
 void generateRandomMap()
 {
     srand(static_cast<unsigned int>(time(0)));
-    double fullWidth = (rand() % 20) + 1;
-    double fullHeight = (rand() % 20) + 1;
+    double fullWidth = (rand() % 100) + 1;
+    double fullHeight = (rand() % 100) + 1;
     mapHalfHeight = fullHeight / 2.0;
     mapHalfWidth = fullWidth / 2.0;
 
@@ -27,3 +27,4 @@ bool isLocationValid(double x, double y)
     {
         return false;
     }
+}

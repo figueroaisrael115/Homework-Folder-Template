@@ -1,7 +1,8 @@
-#include "mapstuff.hpp"
+#include "../include/mapstuff.hpp"
 #include <iostream>
 #include <ctime>
 #include <cstdlib>
+#include <string>
 
 int main()
 {
@@ -22,6 +23,5 @@ int main()
     {
         std::cout << userName << "is outside the map and is not valid." << std::endl;
     }
-
     return 0;
 }
