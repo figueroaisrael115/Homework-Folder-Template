@@ -21,7 +21,7 @@ int main()
     }
     else
     {
-        std::cout << userName << "is outside the map and is not valid." << std::endl;
+        std::cout << userName << " is outside the map and is not valid." << std::endl;
     }
     return 0;
 }
