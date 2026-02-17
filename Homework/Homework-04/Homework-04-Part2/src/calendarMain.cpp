@@ -1,14 +1,23 @@
 #include <iostream>
-#include <iomanip>
-#include <cmath>
+#include <string>
+#include "../include/calendar.hpp"
 
 int main()
 {
-    int month, year;
-    std::cout << "Enter A Month (MM) and Year (YYYY):" << std::endl;
-    std::cin >> month;
-    std::cout << "Enter A Year (YYYY):" << std::endl;
-    std::cin >> year;
+    int year;
+    std::string months[] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+    std::cout << "Enter a Year: (YYYY)" << std::endl;
+    if (!(std::cin >> year))
+        return 1;
 
-       return 0;
+    int currentDay = getStartDay(year, 1);
+
+    std::cout << "\n*** Calendar for " << year << "***\n";
+
+    for (int i = 0; i < 12; i++)
+    {
+        int days = getDaysInMonth(i + 1, year);
+        printMonth(months[i], days, currentDay);
+    }
+    return 0;
 }
