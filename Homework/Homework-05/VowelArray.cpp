@@ -12,7 +12,7 @@ int main()
     {
 
         char currentChar = input[i];
-        if (currentChar == 'a' || currentChar == 'e' || currentChar 'e' || currentChar 'i' || currentChar == 'o' || currentChar == 'u')
+        if (currentChar == 'a' || currentChar == 'e' || currentChar == 'i' || currentChar == 'o' || currentChar == 'u')
         {
             vowelCount++;
         }
